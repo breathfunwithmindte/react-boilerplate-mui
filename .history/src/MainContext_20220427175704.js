@@ -57,7 +57,7 @@ export const ContextProvider = ({children}) => {
     <mainContext.Provider value={state}>
       <ThemeProvider theme={mui_theme}>
         {
-          state.user ? <div className="App" style={createStyle(state.project.theme.dark)}>{children}</div> : <p>login</p>
+          state.user ? <div className="App" style={createStyle()}>{children}</div> : <p>login</p>
         }
       </ThemeProvider>
     </mainContext.Provider>

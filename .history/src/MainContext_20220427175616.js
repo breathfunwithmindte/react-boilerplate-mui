@@ -35,15 +35,25 @@ export const ContextProvider = ({children}) => {
   useEffect(() => {
     setState(pr => {
       return {
-        user: { username: "Mike" },
-        project: { theme: { dark: style } }
+        user: {
+          username: "Mike"
+        },
+        project: {
+          theme: {
+            dark: style
+          }
+        }
       };
     });
     setTimeout(() => {
       set_mui_theme(createTheme({
         palette: {
           mode: "dark",
-          primary: { main: style.pr, dark: style.pr1, contrastText: style.pclr }
+          primary: {
+            main: style.pr,
+            dark: style.pr1,
+            contrastText: style.pclr
+          }
         }
       }));
     }, 1000);
@@ -57,7 +67,7 @@ export const ContextProvider = ({children}) => {
     <mainContext.Provider value={state}>
       <ThemeProvider theme={mui_theme}>
         {
-          state.user ? <div className="App" style={createStyle(state.project.theme.dark)}>{children}</div> : <p>login</p>
+          state.user ? <div className="App" style={createStyle()}>{children}</div> : <p>login</p>
         }
       </ThemeProvider>
     </mainContext.Provider>

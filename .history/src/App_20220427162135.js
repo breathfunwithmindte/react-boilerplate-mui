@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./styles/primary/App.css";
 import "./styles/primary/PageHeader.css";
 import "./styles/primary/Reuseable.css";
-import MainTemplate from "./pages/Main.template.jsx";
+import MainTemplate from "./pages/Main.template";
 import SoloContentTemplate from "./pages/SoloContent.template";
 
 function App() {
@@ -16,7 +16,8 @@ function App() {
 
   return (
     <div className="App-in">
-        <Header />
+      <Header />
+
           {/* primary template like email lists - or single email */}
           <Routes>
             <Route path="/" element={<Appp />} />
@@ -31,5 +32,3 @@ function App() {
 }
 
 export default App;
-
-

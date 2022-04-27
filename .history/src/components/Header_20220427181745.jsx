@@ -1,6 +1,5 @@
 import { styled } from '@mui/material';
 import { Autocomplete, Button, IconButton, InputBase } from '@mui/material';
-import SearchIcon from "@mui/icons-material/Search"
 import React from 'react';
 
 const Search = styled('div')(({ theme }) => ({

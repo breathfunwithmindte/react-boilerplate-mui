@@ -1,22 +1,35 @@
-import { styled } from '@mui/material';
-import { Autocomplete, Button, IconButton, InputBase } from '@mui/material';
-import SearchIcon from "@mui/icons-material/Search"
+import { Button } from '@mui/material';
 import React from 'react';
 
-const Search = styled('div')(({ theme }) => ({
-    border: "1px solid var(--h)",
-    display: "flex",
-    alignItems: "center",
-    padding: "calc(var(--p2) - 0.14rem) ",
-    paddingLeft: "var(--p2)",
-    '&:hover': {
-      backgroundColor: "var(--h)"
-    }
-}));
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: 'var(--clr)',
-  marginLeft: "var(--m)"
-}));
+// const Search = (0,_mui_material_styles__WEBPACK_IMPORTED_MODULE_2__["default"])('div')(_ref => {
+//   let {
+//     theme
+//   } = _ref;
+//   return {
+//     position: 'relative',
+//     borderRadius: theme.shape.borderRadius,
+//     border: "1px solid var(--h)",
+//     display: "flex",
+//     alignItems: "center",
+//     padding: "calc(var(--p2) - 0.14rem) ",
+//     paddingLeft: "var(--p2)",
+//     '&:hover': {
+//       backgroundColor: "var(--h)"
+//     }
+//   };
+// });
+// _c = Search;
+// const StyledInputBase = (0,_mui_material_styles__WEBPACK_IMPORTED_MODULE_2__["default"])(_mui_material_InputBase__WEBPACK_IMPORTED_MODULE_3__["default"])(_ref2 => {
+//   let {
+//     theme
+//   } = _ref2;
+//   return {
+//     color: 'var(--clr)',
+//     '& .MuiInputBase-input': {
+//       marginLeft: "var(--m)"
+//     }
+//   };
+// });
 
 const Header = () => {
   return (
@@ -25,31 +38,10 @@ const Header = () => {
         <img src="" alt="" className="logo-img" />
         <h1 className="logo">MailExplore</h1>
       </div>
-      <Autocomplete
-        {...{ options: top100Films, getOptionLabel: (i) => i.title  }}
-        style={{width: "50%"}}
-        id="custom-input-demo"
-        renderInput={(params) => (
-          <div ref={params.InputProps.ref}>
-            <Search>
-              <IconButton>
-                <SearchIcon />
-              </IconButton>
-              <StyledInputBase
-                {...params.inputProps}
-                placeholder="Search…"
-                inputProps={{ 'aria-label': 'search' }}
-              />
-            </Search>
-          </div>
-        )}
-      />
+      <Button>asdasd</Button>
       <div className="logo">
         <img src="" alt="" className="logo-img" />
       </div>
-      <section className="user-section">
-        mike karypidis
-      </section>
     </header>
   );
 }

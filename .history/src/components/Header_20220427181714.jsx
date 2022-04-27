@@ -1,6 +1,5 @@
 import { styled } from '@mui/material';
 import { Autocomplete, Button, IconButton, InputBase } from '@mui/material';
-import SearchIcon from "@mui/icons-material/Search"
 import React from 'react';
 
 const Search = styled('div')(({ theme }) => ({
@@ -30,7 +29,7 @@ const Header = () => {
         style={{width: "50%"}}
         id="custom-input-demo"
         renderInput={(params) => (
-          <div ref={params.InputProps.ref}>
+          <div ref={params.InputProps.ref}>{...params.inputProps}
             <Search>
               <IconButton>
                 <SearchIcon />

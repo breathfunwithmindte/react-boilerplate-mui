@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./styles/primary/App.css";
 import "./styles/primary/PageHeader.css";
 import "./styles/primary/Reuseable.css";
-import MainTemplate from "./pages/Main.template.jsx";
+import MainTemplate from "./pages/Main.template";
 import SoloContentTemplate from "./pages/SoloContent.template";
 
 function App() {
@@ -16,7 +16,8 @@ function App() {
 
   return (
     <div className="App-in">
-        <Header />
+      <Header />
+
           {/* primary template like email lists - or single email */}
           <Routes>
             <Route path="/" element={<Appp />} />
@@ -33,3 +34,68 @@ function App() {
 export default App;
 
 
+// bclr
+// :
+// "rgba(0,0,0,0.86)"
+// bclr1
+// :
+// "#45494E"
+// bg0
+// :
+// "#1E1E1E"
+// bg1
+// :
+// "#242428"
+// bg2
+// :
+// "#45494E"
+// clr
+// :
+// "#FFFFFF"
+// clr1
+// :
+// "#E4E6D8"
+// clr2
+// :
+// "#B8BBBF"
+// h
+// :
+// "rgba(0,0,0,0.14)"
+// m
+// :
+// "0.69rem"
+// m1
+// :
+// "0.14rem"
+// p
+// :
+// "1.14rem"
+// p1
+// :
+// "0.69rem"
+// p2
+// :
+// "0.24rem"
+// pclr
+// :
+// "#FFFFFF"
+// pr
+// :
+// "#0A493A"
+// pr1
+// :
+// "#09735A"
+// pr2
+// :
+// ""
+// s
+// :
+// ""
+// whd
+// :
+// "297px"
+// wpg
+// :
+// "calc(100vw - var(--whd))"
+// new entry
+// : 
