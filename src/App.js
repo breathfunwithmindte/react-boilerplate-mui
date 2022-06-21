@@ -10,13 +10,15 @@ import SoloContentTemplate from "./pages/SoloContent.template";
 function App() {
   const { user } = useMain();
 
-  const Appp = () => <MainTemplate><div>Gello wolrd app</div></MainTemplate>
+  const Appp = () => <MainTemplate><div className="App-page">
+    <div style={{minWidth: 2000, minHeight: 3000}}>
+      asd </div>
+      </div></MainTemplate>
   const Appp1 = () => <MainTemplate><div>Gello wolrd app 111</div></MainTemplate>
   const Appp2 = () => <SoloContentTemplate><div>Gello wolrd app 111 2222</div></SoloContentTemplate>
 
   return (
-    <div className="App-in">
-        <Header />
+    <div className="App">
           {/* primary template like email lists - or single email */}
           <Routes>
             <Route path="/" element={<Appp />} />

@@ -23,7 +23,8 @@ const style = {
   pr1: "#09735A",
   pr2: "",
   pclr: "red",
-  wpg: "calc(100vw - var(--whd))",
+  ppadding: "14vw",
+  wpg: "calc(100% - var(--whd))",
   whd: "297px"
 };
 
