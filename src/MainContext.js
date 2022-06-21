@@ -23,9 +23,9 @@ const style = {
   pr1: "#09735A",
   pr2: "",
   pclr: "red",
-  ppadding: "14vw",
+  ppadding: "23vw",
   wpg: "calc(100% - var(--whd))",
-  whd: "297px"
+  whd: "224px"
 };
 
 export const ContextProvider = ({children}) => {

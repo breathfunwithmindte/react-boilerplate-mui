@@ -22,6 +22,8 @@ function App() {
           {/* primary template like email lists - or single email */}
           <Routes>
             <Route path="/" element={<Appp />} />
+            <Route path="/email/:something" element={<Appp />} />
+            <Route path="/" element={<Appp />} />
             <Route path="/1" element={<Appp1 />} />
             <Route path="/*" element={<SoloContentTemplate><div><h1>Page not found || 404</h1></div></SoloContentTemplate>} />
           </Routes>
